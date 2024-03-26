@@ -12,42 +12,84 @@
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 
-<body class="font-poppins">
+<body class="font-poppins mx-3 lg:mx-20">
     <header class="container ">
         <!-- nav bar -->
-        <div class="flex justify-around bg-base-100 mt-5">
-            <div class="">
-                <div class="dropdown">
-                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M4 6h16M4 12h8m-8 6h16" />
-                        </svg>
+        <section>
+            <div class="flex justify-between bg-base-100 my-5">
+                <div class="">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <li><a>Home</a></li>
+                            <li><a>About</a></li>
+                            <li><a>Destination</a></li>
+                            <li><a>Search</a></li>
+                        </ul>
                     </div>
-                    <ul tabindex="0"
-                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                    <a class="btn btn-ghost text-xl font-bold">P-Ticket</a>
+                </div>
+                <div class=" hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
                         <li><a>Home</a></li>
                         <li><a>About</a></li>
                         <li><a>Destination</a></li>
                         <li><a>Search</a></li>
                     </ul>
                 </div>
-                <a class="btn btn-ghost text-xl font-bold">P-Ticket</a>
+                <div class="">
+                    <a class="btn text-green-500 bg-green-100 border-1 border-green-200"><img src="images/bus-icon.png"
+                            alt="" srcset="">Bus</a>
+                </div>
             </div>
-            <div class=" hidden lg:flex">
-                <ul class="menu menu-horizontal px-1">
-                    <li><a>Home</a></li>
-                    <li><a>About</a></li>
-                    <li><a>Destination</a></li>
-                    <li><a>Search</a></li>
-                </ul>
+        </section>
+        <!-- banner -->
+        <section>
+            <div class="hero min-h-[600px] rounded-lg" style="background-image: url(images/banner.png);">
+
+                <div class="hero-content text-center text-neutral-content">
+                    <div class="max-w-xl">
+                        <h1 class="mb-5 text-5xl lg:text-5xl font-bold text-white">End-to-End Travel with <br> <span
+                                class="text-green-500">P Paribahan</span></h1>
+                        <p class="mb-5">Travel to were ever your heart desires without worrying about anything. </p>
+                        <button class="btn bg-green-500 border-none">Buy Tickets</button>
+                    </div>
+                </div>
             </div>
-            <div class="">
-                <a class="btn text-green-500 bg-green-100 border-1 border-green-200"><img src="images/bus-icon.png"
-                        alt="" srcset="">Bus</a>
+            <!-- cards -->
+            <div class="flex flex-col lg:flex-row lg:space-x-4  lg:translate-y-[-50px] justify-center my-5">
+
+                <div class="bg-white border-b-2 border-emerald-500 rounded-md p-4 mb-2 flex w-72">
+                    <img src="images/people.png" alt="">
+                   <div>
+                    <h6 class="text-2xl font-extrabold text-left mt-4">500 K+</h6>
+                    <p class="text-sm text-gray-500 mt-1 text-left">registered users</p>
+                   </div>
+                  </div>
+                <div class="bg-white border-b-2 border-emerald-500 rounded-md p-4 mb-2 flex w-72">
+                    <img src="images/ticket-cupon.png" alt="">
+                   <div>
+                    <h6 class="text-2xl font-extrabold text-left mt-4">1.7 lacks</h6>
+                    <p class="text-sm text-gray-500 mt-1 text-left">Tickets sold</p>
+                   </div>
+                  </div>
+                <div class="bg-white border-b-2 border-emerald-500 rounded-md p-4 mb-2 flex w-72">
+                    <img src="images/stoppage.png" alt="">
+                   <div>
+                    <h6 class="text-2xl font-extrabold text-left mt-4">80 k+</h6>
+                    <p class="text-sm text-gray-500 mt-1 text-left">Rental partners</p>
+                   </div>
+                  </div>
+               
             </div>
-        </div>
+        </section>
     </header>
     <main>
 

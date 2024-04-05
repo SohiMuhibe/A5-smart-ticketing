@@ -10,10 +10,12 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- custom css -->
     <link rel="stylesheet" href="styles/styles.css">
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/4a753d1d29.js" crossorigin="anonymous"></script>
 </head>
 
-<body class="font-poppins mx-3 lg:mx-20">
-    <header class="container ">
+<body class="font-poppins ">
+    <header class=" mx-3 lg:mx-20">
         <!-- nav bar -->
         <section>
             <div class="flex justify-between bg-base-100 my-5">
@@ -59,7 +61,7 @@
                         <h1 class="mb-5 text-5xl lg:text-5xl font-bold text-white">End-to-End Travel with <br> <span
                                 class="text-green-500">P Paribahan</span></h1>
                         <p class="mb-5">Travel to were ever your heart desires without worrying about anything. </p>
-                        <button class="btn bg-green-500 border-none">Buy Tickets</button>
+                        <button onclick="goParibahan()" class="btn bg-green-500 border-none">Buy Tickets</button>
                     </div>
                 </div>
             </div>
@@ -68,31 +70,131 @@
 
                 <div class="bg-white border-b-2 border-emerald-500 rounded-md p-4 mb-2 flex w-72">
                     <img src="images/people.png" alt="">
-                   <div>
-                    <h6 class="text-2xl font-extrabold text-left mt-4">500 K+</h6>
-                    <p class="text-sm text-gray-500 mt-1 text-left">registered users</p>
-                   </div>
-                  </div>
+                    <div>
+                        <h6 class="text-2xl font-extrabold text-left mt-4">500 K+</h6>
+                        <p class="text-sm text-gray-500 mt-1 text-left">registered users</p>
+                    </div>
+                </div>
                 <div class="bg-white border-b-2 border-emerald-500 rounded-md p-4 mb-2 flex w-72">
                     <img src="images/ticket-cupon.png" alt="">
-                   <div>
-                    <h6 class="text-2xl font-extrabold text-left mt-4">1.7 lacks</h6>
-                    <p class="text-sm text-gray-500 mt-1 text-left">Tickets sold</p>
-                   </div>
-                  </div>
+                    <div>
+                        <h6 class="text-2xl font-extrabold text-left mt-4">1.7 lacks</h6>
+                        <p class="text-sm text-gray-500 mt-1 text-left">Tickets sold</p>
+                    </div>
+                </div>
                 <div class="bg-white border-b-2 border-emerald-500 rounded-md p-4 mb-2 flex w-72">
                     <img src="images/stoppage.png" alt="">
-                   <div>
-                    <h6 class="text-2xl font-extrabold text-left mt-4">80 k+</h6>
-                    <p class="text-sm text-gray-500 mt-1 text-left">Rental partners</p>
-                   </div>
-                  </div>
-               
+                    <div>
+                        <h6 class="text-2xl font-extrabold text-left mt-4">80 k+</h6>
+                        <p class="text-sm text-gray-500 mt-1 text-left">Rental partners</p>
+                    </div>
+                </div>
+
             </div>
         </section>
     </header>
-    <main>
+    <main id="main" class="bg-red-50 p-3 lg:p-20 rounded-t-3xl border-t-2 border-emerald-400">
+        <!-- p.h paribahan  -->
+        <section>
+            <div class="text-center mb-7">
+                <h1 class="mb-5 text-3xl font-bold">P.H paribahan</h1>
+                <p class="text-gray-400">Travel comfortably to wear ever your heart desires without breaking the bank in
+                    out bus . </p>
+            </div>
 
+            <!-- Greenline Paribahan -->
+            <div class="flex flex-col lg:flex-row bg-white rounded-2xl">
+                <div class="min-w-[70%] grid grid-cols-4 border-r-2 border-green-400 border-dashed p-4">
+                    <div class="col-span-3 flex flex-row gap-2">
+                        <img class="size-min" src="images/bus-logo.png" alt="" srcset="">
+                        <h1 class="mb-5 text-2xl font-bold">Greenline Paribahan <br>
+                            <span class="text-gray-400 text-base">Coach-009-WEB ! AC_Business</span>
+                        </h1>
+                    </div>
+                    <button class="btn text-green-500 bg-green-100 border-1 border-green-200"><img
+                            src="images/seat-green.png" alt="" srcset=""><span>40</span> seats left</button>
+
+                    <div class="col-span-4 bg-red-50 rounded-xl p-4">
+                        <div class="flex justify-between p-2">
+                            <p class="text-gray-500 ">Rought</p>
+                            <p>Dhaka-Sylhet</p>
+                        </div>
+                        <div class="flex justify-between border-y-2 border-rose-300 border-dashed p-2">
+                            <p class="text-gray-500 ">Departure time</p>
+                            <p>9:00 pm</p>
+                        </div>
+                        <div class="flex flex-col lg:flex-row justify-between lg:space-x-2 py-2">
+                            <button class="btn bg-red-100 text-gray-600">Boarding point - Laxmipur</button>
+                            <button class="btn bg-red-100 text-gray-600">Dropping point - Bogura </button>
+                            <button class="btn bg-red-100 text-gray-600">Est. time - 11 hours</button>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="mx-auto my-auto">
+                    <img src="images/fare.png" alt="" srcset="">
+                    <h1 class=" text-3xl font-bold">500 taka</h1>
+                    <p class="text-gray-400">per seat</p>
+                </div>
+            </div>
+
+        </section>
+        <!-- seat -->
+        <section class=" bg-white rounded-xl p-5 mt-5 flex flex-col lg:flex-row">
+            <div class="border-r-2 border-green-400 border-dashed p-4">
+                <h1 class="font-semibold text-xl mb-2">Select Your Seat</h1>
+                <div class="flex justify-between border-y-2 border-gray-300 border-dashed p-2">
+                    <p class="text-gray-400 font-semibold flex"><img src="images/seat-gray.png" alt="" srcset="">
+                        Available</p>
+                    <p class="text-gray-400 font-semibold flex"><img src="images/seat-green-filled.png" alt=""
+                            srcset=""> Selected</p>
+                </div>
+                <div class="text-gray-500 mt-3 flex space-x-6 ">
+                    <div class="flex flex-col space-y-4">
+                        <p class="h-12"></p>
+                        <p class="btn btn-ghost ">A</p>
+                        <p class="btn btn-ghost ">B</p>
+                        <p class="btn btn-ghost ">C</p>
+                        <p class="btn btn-ghost ">D</p>
+                        <p class="btn btn-ghost ">E</p>
+                        <p class="btn btn-ghost ">F</p>
+                        <p class="btn btn-ghost ">G</p>
+                        <p class="btn btn-ghost ">H</p>
+                        <p class="btn btn-ghost ">I</p>
+                        <p class="btn btn-ghost ">J</p>
+                    </div>
+                    <div class="grid grid-cols-2 gap-4">
+                        <p class="col-span-2 h-12"></p>
+                    <button id="A1" onclick="setBgByID('A1')" class="btn">A1</button><button id="A2" onclick="setBgByID('A2')" class="btn px-8">A2</button>
+                    <button id="B1" onclick="setBgByID('B1')" class="btn">B1</button><button id="B2" onclick="setBgByID('B2')" class="btn">B2</button>
+                    <button id="C1" onclick="setBgByID('C1')" class="btn">C1</button><button id="C2" onclick="setBgByID('C2')" class="btn">C2</button>
+                    <button id="D1" onclick="setBgByID('D1')" class="btn">D1</button><button id="D2" onclick="setBgByID('D2')" class="btn">D2</button>
+                    <button id="E1" onclick="setBgByID('E1')" class="btn">E1</button><button id="E2" onclick="setBgByID('E2')" class="btn">E2</button>
+                    <button id="F1" onclick="setBgByID('F1')" class="btn">F1</button><button id="F2" onclick="setBgByID('F2')" class="btn">F2</button>
+                    <button id="G1" onclick="setBgByID('G1')" class="btn">G1</button><button id="G2" onclick="setBgByID('G2')" class="btn">G2</button>
+                    <button id="H1" onclick="setBgByID('H1')" class="btn">H1</button><button id="H2" onclick="setBgByID('H2')" class="btn">H2</button>
+                    <button id="I1" onclick="setBgByID('I1')" class="btn">I1</button><button id="I2" onclick="setBgByID('I2')" class="btn">I2</button>
+                    <button id="J1" onclick="setBgByID('J1')" class="btn">J1</button><button id="J2" onclick="setBgByID('J2')" class="btn">J2</button>
+                    </div>
+                    <div class="grid grid-cols-2 gap-4">
+                    <p class="h-12"></p><button class="btn px-4"><img class="size-1/2" src="images/118603_wheel_steering_icon.png" alt=""></button>
+                    <button id="A3" onclick="setBgByID('A3')" class="btn">A3</button><button id="A4" onclick="setBgByID('A4')" class="btn px-8">A4</button>
+                    <button id="B3" onclick="setBgByID('B3')" class="btn">B3</button><button id="B4" onclick="setBgByID('B4')" class="btn">B4</button>
+                    <button id="C3" onclick="setBgByID('C3')" class="btn">C3</button><button id="C4" onclick="setBgByID('C4')" class="btn">C4</button>
+                    <button id="D3" onclick="setBgByID('D3')" class="btn">D3</button><button id="D4" onclick="setBgByID('D4')" class="btn">D4</button>
+                    <button id="E3" onclick="setBgByID('E3')" class="btn">E3</button><button id="E4" onclick="setBgByID('E4')" class="btn">E4</button>
+                    <button id="F3" onclick="setBgByID('F3')" class="btn">F3</button><button id="F4" onclick="setBgByID('F4')" class="btn">F4</button>
+                    <button id="G3" onclick="setBgByID('G3')" class="btn">G3</button><button id="G4" onclick="setBgByID('G4')" class="btn">G4</button>
+                    <button id="H3" onclick="setBgByID('H3')" class="btn">H3</button><button id="H4" onclick="setBgByID('H4')" class="btn">H4</button>
+                    <button id="I3" onclick="setBgByID('I3')" class="btn">I3</button><button id="I4" onclick="setBgByID('I4')" class="btn">I4</button>
+                    <button id="J3" onclick="setBgByID('J3')" class="btn">J3</button><button id="J4" onclick="setBgByID('J4')" class="btn">J4</button>
+                    </div>
+                </div>
+            </div>
+            <div class="ml-5">
+                <h1 class="font-semibold text-xl   border-b-2 border-gray-300 border-dashed p-2">Select Your Seat</h1>
+            </div>
+        </section>
     </main>
     <footer>
 
